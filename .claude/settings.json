@@ -1,0 +1,141 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Grep",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "C:/Users/Shrey/.local/bin/graphify.EXE hook-guard search"
+          }
+        ]
+      },
+      {
+        "matcher": "Read|Glob",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "C:/Users/Shrey/.local/bin/graphify.EXE hook-guard read"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "claude-api@anthropic-agent-skills": true,
+    "document-skills@anthropic-agent-skills": true,
+    "example-skills@anthropic-agent-skills": true,
+    "headroom@headroom-marketplace": true,
+    "ecc@ecc": true,
+    "taste-skill@taste-skill": true,
+    "code-simplifier@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "mcp-tunnels@claude-plugins-official": true,
+    "superpowers@superpowers-marketplace": true,
+    "context7@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true,
+    "academic-research-skills@academic-research-skills": true,
+    "research-papers@research-papers-marketplace": true,
+    "manuscript@research-skills": true,
+    "opencite@research-skills": true,
+    "figures@research-skills": true,
+    "ml-training@research-skills": true,
+    "project@research-skills": true,
+    "ponytail@ponytail": true,
+    "rtk-plugin@enix": true,
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true,
+    "caveman@caveman": true
+  },
+  "extraKnownMarketplaces": {
+    "anthropic-agent-skills": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/anthropics/skills.git"
+      }
+    },
+    "headroom-marketplace": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/headroomlabs-ai/headroom.git"
+      }
+    },
+    "ecc": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/affaan-m/ECC.git"
+      }
+    },
+    "taste-skill": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/Leonxlnx/taste-skill.git"
+      }
+    },
+    "claude-plugins-official": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/anthropics/claude-plugins-official.git"
+      }
+    },
+    "superpowers-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers-marketplace"
+      }
+    },
+    "academic-research-skills": {
+      "source": {
+        "source": "github",
+        "repo": "Imbad0202/academic-research-skills"
+      }
+    },
+    "research-papers-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "ctoth/research-papers-plugin"
+      }
+    },
+    "research-skills": {
+      "source": {
+        "source": "github",
+        "repo": "neuromechanist/research-skills"
+      }
+    },
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
+    },
+    "enix": {
+      "source": {
+        "source": "github",
+        "repo": "enixCode/plugins"
+      }
+    },
+    "ui-ux-pro-max-skill": {
+      "source": {
+        "source": "github",
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
+      }
+    },
+    "caveman": {
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
+      }
+    }
+  },
+  "modelSettings": {
+    "claude-sonnet-5": {
+      "effortLevel": "low"
+    }
+  },
+  "tui": "fullscreen",
+  "theme": "dark"
+}

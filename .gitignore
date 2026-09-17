@@ -1,0 +1,44 @@
+# --- Secrets / credentials — NEVER commit these ---
+*.credentials.json
+.credentials.json
+*credentials*.json
+**/oauth*.json
+**/*token*.json
+**/*secret*.json
+*.pem
+*.key
+.env
+.env.*
+
+# --- Claude Code local/machine state (not portable) ---
+.claude/cache/
+.claude/sessions/
+.claude/session-data/
+.claude/session-env/
+.claude/shell-snapshots/
+.claude/telemetry/
+.claude/metrics/
+.claude/ide/
+.claude/file-history/
+.claude/backups/
+.claude/state/
+.claude/projects/
+.claude/plugins/
+.claude/*.log
+.claude/history.jsonl
+.claude/.caveman-*
+.claude/.ponytail-*
+.claude/.last-*
+
+# --- OS / editor junk ---
+Thumbs.db
+desktop.ini
+*.swp
+.DS_Store
+
+# --- Language/runtime junk (in case scripts/tooling get added later) ---
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
